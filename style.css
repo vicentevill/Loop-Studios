@@ -1,0 +1,15 @@
+html *{
+    background-color: rgba(137, 43, 226, 0.175);
+    outline: grey dotted 1px;
+}
+body *{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+}
+
+header{
+    
+}
