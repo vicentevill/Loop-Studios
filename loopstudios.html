@@ -11,39 +11,65 @@
       href="/images/favicon-32x32.png"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div id="topNav">
-        <aside><img src="images/logo.svg" alt="" /></aside>
-        <aside><img src="images/icon-hamburger.svg" alt="" /></aside>
-        <section>IMMERSIVE EXPERIENCES THAT DELIVER</section>
+      <div id="navWrapper">
+        <img id="logoHeader" src="images/logo.svg" alt="" />
+        <img id="hamburgerMenu" src="images/icon-hamburger.svg" alt="" />
       </div>
+      <h1 id="headText">Immersive experiences that deliver</h1>
     </header>
     <main>
-      <img src="" alt="" />
-      <h1>The leader in interactive VR</h1>
-      <p>
+      <img
+        id="interactiveVR"
+        src="images/mobile/image-interactive.jpg"
+        alt=""
+      />
+      <h1 id="vrHeader">The leader in interactive VR</h1>
+      <p id="vrText">
         Founded in 2011, Loopstudios has been producing world-class virtual
         reality projects for some of the best companies around the globe. Our
         award-winning creations have transformed businesses through digital
         experiences that bind to their brand.
       </p>
-      <h1>Our creations</h1>
-      <div>
-        <section><h2>Deep earth</h2></section>
-        <section><h2>Night arcade</h2></section>
-        <section><h2>Soccer team VR</h2></section>
-        <section><h2>The grid</h2></section>
-        <section><h2>From up above VR</h2></section>
-        <section><h2>Pocket borealis</h2></section>
-        <section><h2>The curiosity</h2></section>
-        <section><h2>Make it fisheye</h2></section>
+      <h1 id="creations">Our creations</h1>
+      <div id="creationsWrapper">
+        <section id="deepEarth" class="creationHero">
+          <h2 class="creationSection">Deep earth</h2>
+        </section>
+        <section id="nightArcade" class="creationHero">
+          <h2 class="creationSection">Night arcade</h2>
+        </section>
+        <section id="soccer" class="creationHero">
+          <h2 class="creationSection">Soccer team VR</h2>
+        </section>
+        <section id="theGrid" class="creationHero">
+          <h2 class="creationSection">The grid</h2>
+        </section>
+        <section id="fromAbove" class="creationHero">
+          <h2 class="creationSection">From up above VR</h2>
+        </section>
+        <section id="pocketBorealis" class="creationHero">
+          <h2 class="creationSection">Pocket borealis</h2>
+        </section>
+        <section id="theCuriosity" class="creationHero">
+          <h2 class="creationSection">The curiosity</h2>
+        </section>
+        <section id="fishEye" class="creationHero">
+          <h2 class="creationSection">Make it fisheye</h2>
+        </section>
       </div>
-      <button>SEE ALL</button>
+      <button id="seeAll">See all</button>
     </main>
     <footer>
-      <img src="" alt="" />
+      <img src="images/logo.svg" alt="" />
       <nav>About</nav>
       <nav>Careers</nav>
       <nav>Events</nav>
@@ -55,7 +81,7 @@
         <img src="" alt="" />
         <img src="" alt="" />
       </div>
-      <aside></aside>
+      <aside>© 2021 Loopstudios. All rights reserved.</aside>
     </footer>
   </body>
 </html>
