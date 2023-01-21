@@ -1,12 +1,10 @@
 /* font-family: 'Alata', sans-serif;
 font-family: 'Josefin Sans', sans-serif; */
 
-
-
-html *{
+/* html *{
     background-color: rgba(137, 43, 226, 0.175);
     outline: grey dotted 1px;
-}
+} */
 
 body *{
     justify-content: center;
@@ -174,4 +172,36 @@ line-height: 20px;
     margin-bottom: 90px;
  }
 
- 
+ footer{
+    justify-content: center;
+    align-items: center;
+    padding: 75px 0 75px 0;
+    gap: 30px;
+    text-align: center;
+    background-color:black;
+ }
+
+ #logoFooter{
+    width: 150px;
+    align-self: center;
+ }
+
+ .footerNav{
+    font-family: 'Alata', sans-serif;
+ }
+
+ #socialWrapper{
+    flex-direction: row;
+    gap: 15px;
+ }
+
+ .socialIcons{
+    height: 25px;
+    width: fit-content;
+ }
+
+ #copyright{
+    color: #808080;
+    font-family: 'Alata', sans-serif;
+    bottom: 10px;
+ }
