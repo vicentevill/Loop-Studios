@@ -13,11 +13,13 @@ body *{
     width: 100%;
     flex-direction: column;
     font-family: 'Josefin Sans', sans-serif; 
-   color: white;
+    color: white;
 }
 
 body{
     margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -26,7 +28,7 @@ header{
     padding-top: 50px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:cover
+    background-size:cover;
 }
 
 #navWrapper{
@@ -39,6 +41,17 @@ header{
 #logoHeader{
     width: 130px;
     height: fit-content;
+}
+
+#desktopNavWrapper{
+    width: fit-content;
+    flex-direction: row;
+    text-transform: none;
+    gap: 20px;
+}
+
+.desktopNav{
+    font-family: 'Alata', sans-serif;
 }
 
 #hamburgerMenu{
@@ -79,6 +92,10 @@ font-family: 'Alata', sans-serif;
 color: #808080;
 font-size: 14px;
 line-height: 20px;
+}
+
+.rowWrapper{
+    gap: 20px;
 }
 
 #creations{
@@ -170,6 +187,7 @@ line-height: 20px;
     letter-spacing: 4px;
     margin-top: 30px;
     margin-bottom: 90px;
+    border-style: solid;
  }
 
  footer{
@@ -205,3 +223,142 @@ line-height: 20px;
     font-family: 'Alata', sans-serif;
     bottom: 10px;
  }
+
+ @media screen and (max-width: 768px) {
+    #desktopNavWrapper{
+        display: none;
+    }
+ }
+
+ @media screen and (max-width: 920px) {
+    #creations{
+        width: 750px;
+        align-self: center;
+    }
+
+    #seeAll{
+        left: 680px;
+    }
+ }
+
+
+ @media screen and (min-width: 780px) {
+
+    header{
+        background-image: url(images/desktop/image-hero.jpg);
+    }
+
+    #hamburgerMenu{
+        display: none;
+    }
+
+    #headText{
+        align-self: flex-start;
+        left: 100px;
+        font-size:50px;
+        max-width: 400px;
+        padding: 30px 50px 30px 30px;
+    }
+    
+/* test */
+
+    main{
+        align-self: center;
+        max-width: 905px;
+        margin-bottom: 40px;
+    }
+
+    #vrSection{
+        flex-direction: row;
+    }
+
+    #interactiveVR{
+        max-width: 575px;
+        right: 100px;
+    }
+
+    #vrSectionText{
+        height: fit-content;
+        position: absolute;
+        width: fit-content;
+        padding: 50px 0 0 50px;
+        background-color: white;
+        top: 230px;
+        left: 520px;        
+    }
+
+    #vrHeader{
+        max-width: 250px;
+        text-align: left;
+        align-self: flex-start;
+        margin-top: 0px;
+    }
+
+    #vrText{
+        text-align: left;
+        max-width: 410px;
+        align-self: flex-start;
+    }
+
+    #creations{
+        margin-top: 75px;
+        text-align: left;
+    }
+
+    #creationsWrapper{
+        margin-top: 40px;
+    }
+
+    .rowWrapper{
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    .creationHero{
+        width: 175px;
+        height: 300px;
+    }
+
+    .creationSection{
+        padding: 200px 0 0 25px ;
+        background: linear-gradient(0deg, rgba(0,0,0,0.7411297282584909) 0%, rgba(0,212,255,0) 100%);
+    }
+
+    #deepEarth{
+        background-image: url(images/desktop/image-deep-earth.jpg);
+    }
+
+     #nightArcade{
+        background-image: url(images/desktop/image-night-arcade.jpg);
+     }
+    
+     #soccer{
+        background-image: url(images/desktop/image-soccer-team.jpg);
+     }
+    
+     #theGrid{
+        background-image: url(images/desktop/image-grid.jpg);
+     }
+    
+     #fromAbove{
+        background-image: url(images/desktop/image-from-above.jpg);
+     }
+    
+     #pocketBorealis{
+        background-image: url(images/desktop/image-pocket-borealis.jpg);
+     }
+    
+     #theCuriosity{
+        background-image: url(images/desktop/image-curiosity.jpg);
+     }
+    
+     #fishEye{
+        background-image: url(images/desktop/image-fisheye.jpg);
+     }
+
+     #seeAll{
+        position: absolute;
+        right: 0px;
+        top: 507px;
+     }
+  }
